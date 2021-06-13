@@ -1,27 +1,138 @@
 <html>
   <head>
     <style>
+      /* horrendous CSS */
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./montserrat/Montserrat-Regular.ttf") format("ttf");
+      }
       body {
         font-size: 32px;
-        background: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: royalblue;
+        padding-top: 150px;
+        padding-left: 420px;
+        font-family: "Montserrat", sans-serif;
       }
-
+      p {
+        width: 800px;
+      }
       .q {
-        color: rgb(253, 60, 98);
+        color: #3e7bfa;
+        font-size: 35px;
       }
       .a {
-        color: rgb(47, 228, 47);
+        color: #ffffff;
+        font-size: 32px;
+        line-height: 0.75;
+      }
+
+      svg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: -1;
       }
     </style>
   </head>
   <body>
+    <svg
+      width="1500"
+      height="500"
+      viewBox="0 0 1500 500"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0)">
+        <rect width="1500" height="500" fill="#28293D" />
+        <rect
+          width="1566.11"
+          height="582.584"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 -245.869 530.002)"
+          fill="#1C1C28"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 1305 184.196)"
+          fill="#FF8080"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 1305 250.053)"
+          fill="#57ECA1"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 1292 315.911)"
+          fill="#9DBFF9"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 1279 381.768)"
+          fill="#FCCC75"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 1266 447.626)"
+          fill="#FBEC72"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 1253 513.484)"
+          fill="#A9EFF2"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 -107 9.19574)"
+          fill="#FF8080"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 -107 79.0533)"
+          fill="#57ECA1"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 -120 148.911)"
+          fill="#9DBFF9"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 -133 218.768)"
+          fill="#FCCC75"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 -146 288.626)"
+          fill="#FBEC72"
+        />
+        <rect
+          width="198.404"
+          height="145.333"
+          transform="matrix(0.866044 -0.499967 0.866044 0.499967 -159 358.484)"
+          fill="#A9EFF2"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0">
+          <rect width="1500" height="500" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+
     <div class="joke__box">
-      <h2 class="q">{{q}}</h2>
-      <h2 class="a">{{a}}</h2>
+      <p class="q">Q: {{q}}</p>
+      <p class="a">{{a}}</p>
     </div>
   </body>
 </html>
