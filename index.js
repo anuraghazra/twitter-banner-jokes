@@ -1,3 +1,4 @@
+// @ts-check
 const fs = require("fs");
 const { config } = require("dotenv");
 const { TwitterClient } = require("twitter-api-client");
