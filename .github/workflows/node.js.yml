@@ -2,8 +2,8 @@ name: Twitter Update Banner
 
 on:
   schedule:
-    # every 1 hour
-    - cron: "*/1 * * * *"
+    # * is a special character in YAML so you have to quote this string
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
