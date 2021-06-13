@@ -11,10 +11,14 @@ const twitterClient = new TwitterClient({
   accessTokenSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 });
 
-function updateProfileBanner(data) {
-  await twitterClient.accountsAndUsers.accountUpdateProfileBanner({
-    banner: file,
-  });
+async function updateProfileBanner(data) {
+  try {
+    await twitterClient.accountsAndUsers.accountUpdateProfileBanner({
+      banner: file,
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
 function readBase64File(path) {
   return fs.readFileSync(path, { encoding: "base64" });
@@ -23,5 +27,5 @@ function readBase64File(path) {
 (async function () {
   const data = readBase64File("./test.png");
 
-  updateProfileBanner(data);
+  await updateProfileBanner(data);
 })();
