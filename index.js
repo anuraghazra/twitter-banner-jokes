@@ -14,7 +14,7 @@ const twitterClient = new TwitterClient({
 async function updateProfileBanner(data) {
   try {
     await twitterClient.accountsAndUsers.accountUpdateProfileBanner({
-      banner: file,
+      banner: data,
     });
   } catch (err) {
     console.log(err);
