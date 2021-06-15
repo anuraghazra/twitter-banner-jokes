@@ -26,7 +26,7 @@ function readBase64File(path) {
 }
 
 function random(min, max) {
-  return Math.floor(min + Math.random() * max);
+  return Math.floor(min + Math.random() * (max - min));
 }
 
 async function generateImage(html) {
