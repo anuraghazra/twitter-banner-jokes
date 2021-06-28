@@ -1,0 +1,22 @@
+name: Report a bug with twitter-banner-jokes
+body:
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe the bug
+      description: >-
+        A clear and concise description of what the bug is.
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Expected behavior
+      description: >-
+        A clear and concise description of what you expected to happen.
+  - type: markdown
+    attributes:
+      label: Additional information
+      value: |
+        Additional context
+
