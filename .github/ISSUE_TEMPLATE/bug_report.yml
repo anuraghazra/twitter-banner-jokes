@@ -1,4 +1,7 @@
-name: Report a bug with twitter-banner-jokes
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: [bug, triage]
 body:
   - type: textarea
     validations:
